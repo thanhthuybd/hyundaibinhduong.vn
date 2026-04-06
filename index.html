@@ -384,7 +384,140 @@ s
     .promo-text span {
         animation: chạy 20s linear infinite;
     }
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+    /* Header */
+    .site-header,
+    header {
+        padding: 14px 16px;
+    }
+
+    .logo h1,
+    .site-title {
+        font-size: 24px !important;
+        line-height: 1.2;
+    }
+
+    .logo p {
+        font-size: 14px !important;
+    }
+
+    /* Chữ khuyến mãi */
+    .promo-text {
+        font-size: 13px !important;
+        padding: 6px 0 !important;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .promo-text marquee {
+        font-size: 13px !important;
+        scroll-behavior: smooth;
+    }
+
+    /* Nếu bạn đang dùng span chạy bằng animation */
+    .promo-text span {
+        animation-duration: 18s !important;
+    }
+
+    /* Banner / slider */
+    .hero-slider,
+    .hero-banner,
+    .slide {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        padding: 18px 14px 24px !important;
+        gap: 14px !important;
+        min-height: auto !important;
+    }
+
+    .slide-left,
+    .hero-left,
+    .hero-text {
+        width: 100% !important;
+        text-align: center !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+        order: 1;
+    }
+
+    .slide-left h1,
+    .hero-left h1,
+    .hero-text h1,
+    #bannerTitle {
+        font-size: 28px !important;
+        line-height: 1.15 !important;
+        margin: 0 0 10px !important;
+        text-align: center !important;
+    }
+
+    .slide-left p,
+    .hero-left p,
+    .hero-text p,
+    #bannerDesc {
+        font-size: 16px !important;
+        line-height: 1.4 !important;
+        margin: 0 !important;
+        text-align: center !important;
+    }
+
+    .slide-right,
+    .hero-right {
+        width: 100% !important;
+        text-align: center !important;
+        order: 2;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+
+    .slide-right img,
+    .hero-right img,
+    #bannerImg {
+        width: 92% !important;
+        max-width: 92% !important;
+        height: auto !important;
+        max-height: 220px !important;
+        object-fit: contain !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+
+    /* Nút slider nếu có */
+    .slider-btn {
+        width: 38px !important;
+        height: 38px !important;
+        font-size: 18px !important;
+    }
+
+    .slider-dots {
+        bottom: 10px !important;
+    }
+
+    /* Nút liên hệ dưới cùng */
+    .contact-bar {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        padding: 14px 10px !important;
+    }
+
+    .contact-bar a,
+    .bottom-contact a,
+    .floating-buttons a {
+        font-size: 14px !important;
+        padding: 12px 16px !important;
+min-width: 140px;
+        text-align: center !important;
+    }
 }
+
 
 </style>
 
@@ -419,9 +552,7 @@ s
     </div>
   </header>
 
-  <div class="promo-text">
-  🎉 KHUYẾN MÃI: CHỈ TRONG THÁNG 4/2026 GIẢM GIÁ LÊN ĐẾN 100 TRIỆU ĐỒNG - TẶNG PHỤ KIỆN + BẢO HIỂM (liên hệ 0943.533.613 để đượctư vấn chi tiết)🎉
-</div>
+  
 <section class="hero-banner">
 
   <!-- CHỮ CHẠY -->
