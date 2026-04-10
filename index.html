@@ -564,6 +564,53 @@ min-width: 140px;
   }
 
 }
+@media (max-width: 768px) {
+  .hero-banner {
+    display: flex !important;
+    flex-direction: column-reverse !important; /* ảnh lên trên, chữ xuống dưới */
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    height: auto !important;
+    padding: 20px 14px !important;
+    gap: 14px !important;
+  }
+
+  .hero-text {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+
+  .hero-banner img,
+  #bannerImg {
+    width: 92% !important;
+    max-width: 92% !important;
+    height: auto !important;
+    max-height: 240px !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+
+  #bannerTitle,
+  .hero-text h1 {
+    font-size: 26px !important;
+    line-height: 1.15 !important;
+    margin: 0 0 10px !important;
+    text-align: center !important;
+  }
+
+  #bannerDesc,
+  .hero-text p {
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+    margin: 0 !important;
+    text-align: center !important;
+  }
+}
 
 
 </style>
