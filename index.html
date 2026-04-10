@@ -182,10 +182,20 @@ font-size: 15px;
 .site-footer{
   display:grid;
   grid-template-columns: 2fr 1fr 1fr;
-  gap:40px;
+  gap:30px;
   align-items:start;
 }
-s
+@media (max-width: 768px) {
+  .site-footer {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media (max-width: 768px) {
+  .site-footer {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+}
 
 .footer-col h3{
   margin:0 0 12px;
@@ -651,7 +661,7 @@ min-width: 140px;
 
   <!-- CHỮ CHẠY -->
   <div class="promo-text">
-   <marquee scrollamount="5" style="color:red; font-weight:bold;">
+   <marquee scrollamount="4" style="color:red; font-weight:bold;">
   🎉 KHUYẾN MÃI: TỪ NGÀY 11/4/2026 (đến khi có thông báo mới) GIẢM GIÁ LÊN ĐẾN 170 TRIỆU ĐỒNG + QUÀ TẶNG + BẢO HIỂM (liên hệ 0943.533.613 để đượctư vấn chi tiết)🎉
 </marquee>
 
@@ -1298,9 +1308,9 @@ setInterval(() => {
     <p>Đại lý ủy quyền của Hyundai Thành Công Việt Nam</p>
     <p>Hotline bán hàng: 0943.533.613</p>
     <p>Hotline dịch vụ: 0943.533.613</p>
-    <p>Showroom 1S: 48A, ĐLBD, P. Phú Hòa, TP. Thủ Dầu Một</p>
-    <p>Showroom 3S: 538 đường Hùng Vương, P. Phú Mỹ</p>
-    <p>Xưởng dịch vụ: 45B, Yersin, P. Hiệp Thành</p>
+    <p>Showroom 1S: 48A, Đại lộ Bình Dương, phường Phú Lợi, TPHCM</p>
+    <p>Showroom 3S: 538 đường Hùng Vương, phường Bình Dương, TPHCM</p>
+    <p>Xưởng dịch vụ: 45B, Yersin, phường Thủ Dầu Một, TPHCM</p>
     <p>Thời gian: 8h00 - 17h00</p>
   </div>
 
