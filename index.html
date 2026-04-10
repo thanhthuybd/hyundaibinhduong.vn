@@ -300,41 +300,7 @@ s
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
 
-    /* Banner slider */
-    .slide {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .slide-left {
-        order: 1;
-    }
-
-    .slide-left h1 {
-        font-size: 28px;
-        line-height: 1.2;
-    }
-
-    .slide-left p {
-        font-size: 16px;
-    }
-
-    .slide-right {
-        order: 2;
-        text-align: center;
-        margin-top: 15px;
-    }
-
-    .slide-right img {
-    width: 100%;
-    max-height: 320px;
-    object-fit: contain;
-}
-s
-    }
 
     /* Khuyến mãi */
     .promo-text {
@@ -376,34 +342,8 @@ s
     100% { transform: translateX(-100%); }
 }
 
-@media (max-width: 768px) {
-    .promo-text span {
-        animation: chạy 10s linear infinite;
-    }
-}
 
-@media (min-width: 769px) {
-    .promo-text span {
-        animation: chạy 20s linear infinite;
-    }
-/* ===== MOBILE FIX ===== */
-@media (max-width: 768px) {
 
-    /* Header */
-    .site-header,
-    header {
-        padding: 14px 16px;
-    }
-
-    .logo h1,
-    .site-title {
-        font-size: 24px !important;
-        line-height: 1.2;
-    }
-
-    .logo p {
-        font-size: 14px !important;
-    }
 
     /* Chữ khuyến mãi */
     .promo-text {
@@ -528,89 +468,8 @@ min-width: 140px;
     padding: 6px 0;
 }
 
-
-@media (max-width: 768px) {
-
-  .hero-banner,
-  .slide {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-
-  /* ẢNH lên trên */
-  .slide-right,
-  .hero-right {
-    order: 1 !important;
-    width: 100% !important;
-    text-align: center !important;
-  }
-
-  /* CHỮ xuống dưới */
-  .slide-left,
-  .hero-left,
-  .hero-text {
-    order: 2 !important;
-    width: 100% !important;
-    text-align: center !important;
-  }
-
-  /* Ảnh đẹp hơn mobile */
-  #bannerImg,
-  .hero-right img {
-    width: 95% !important;
-    height: auto !important;
-    margin: 0 auto !important;
-  }
-
 }
-@media (max-width: 768px) {
-  .hero-banner {
-    display: flex !important;
-    flex-direction: column-reverse !important; /* ảnh lên trên, chữ xuống dưới */
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    height: auto !important;
-    padding: 20px 14px !important;
-    gap: 14px !important;
-  }
 
-  .hero-text {
-    width: 100% !important;
-    max-width: 100% !important;
-    text-align: center !important;
-    margin: 0 auto !important;
-    padding: 0 !important;
-  }
-
-  .hero-banner img,
-  #bannerImg {
-    width: 92% !important;
-    max-width: 92% !important;
-    height: auto !important;
-    max-height: 240px !important;
-    object-fit: contain !important;
-    margin: 0 auto !important;
-    display: block !important;
-  }
-
-  #bannerTitle,
-  .hero-text h1 {
-    font-size: 26px !important;
-    line-height: 1.15 !important;
-    margin: 0 0 10px !important;
-    text-align: center !important;
-  }
-
-  #bannerDesc,
-  .hero-text p {
-    font-size: 15px !important;
-    line-height: 1.4 !important;
-    margin: 0 !important;
-    text-align: center !important;
-  }
-}
 
 
 </style>
